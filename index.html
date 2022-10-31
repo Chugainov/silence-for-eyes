@@ -9,21 +9,42 @@
         .shower {
             --slide-ratio: calc(16 / 9);
         }
+
         .slide {
             background-color: black;
         }
+
         .slide .shout-less {
             font-size: 80px;
         }
+        
         .slide .shout {
             color: white;
             letter-spacing: 2px;
             opacity: .8 !important;
         }
+
+        .slide p {
+            color: white;
+            opacity: .7;
+        }
+
+        .slide h2 {
+            color: white;
+            opacity: .8;
+        }
+
         .slide::after {
             background-color: black;
             background-image: none;
+            opacity: .5;
         }
+
+        .slide.inverted::after {
+            background-color: transparent;
+            color: black;
+            opacity: 1;
+        } 
     </style>
 </head>
 <body class="shower list">
@@ -122,19 +143,30 @@
     </section>
 
     <section class="slide clear">
+        <h2 class="shout shout-less shrink">Reason 1:<br>Marketing of elitism</h2>
+    </section>
+
+    <section class="slide inverted">
         <figure>
             <img class="cover" src="pictures/iPhone-white.jpg" alt="iPhone pr on the white background">
         </figure>
     </section>
     
-    <section class="slide clear">
+    <section class="slide">
         <figure>
             <img class="cover" src="pictures/iPhone-black.jpg" alt="iPhone pr on the black background">
         </figure>
     </section>
 
+    <section class="slide clear">
+        <h2 class="shout shout-less shrink">Reason 2:<br> Oled or Amoled screen</h2>
+    </section>
+
     <section class="slide">
-        <h2 class="shout shout-less shrink">Oled Amoled</h2>
+        <h2>OLED</h2>
+        <p><span>Organic Light Emitting Diodes </span> — is a flat light emitting technology, <br>
+            made by placing a series of organic thin films between two conductors.<br>
+            When electrical current is applied, a bright light is emitted.</p>
     </section>
 
     <section class="slide">
