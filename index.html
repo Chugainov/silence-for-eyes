@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Silence for your eyes</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="node_modules/@shower/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+        .slide {
+            background-color: black;
+        }
+        .slide .shout-less {
+            font-size: 80px;
+        }
+        .slide .shout {
+            color: white;
+            letter-spacing: 2px;
+            opacity: .8 !important;
+        }
+        .slide::after {
+            background-color: black;
+            background-image: none;
+        }
+    </style>
+</head>
+<body class="shower list">
+
+    <header class="caption">
+        <h1>Silence for your eyes</h1>
+        <p>Kiryl Chuhainau</p>
+    </header>
+
+    <section class="slide clear" id="cover">
+        <h2 class="shout">Silence for your eyes</h2>
+        <figure>
+            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
+        </figure>
+        <style>
+            #cover h2 {
+                background-color: black;
+                color: white;
+                font-size: 75px;
+                padding: .2em;
+            }
+
+        </style>
+    </section>
+
+    <section class="slide clear">
+        <div class="sidebar place left">
+            <div class="about place left center">
+                <h2>Kiryl Chuhainau</h2>
+                <div class="info">
+                    <p class="info-line">Frontend developer</p>
+                </div>
+                <div class="contacts">
+                    <h2>Contacts:</h2>
+                    <p class="info-line">Email: kiryl.chuhainau@itechart-group.com</p>
+                    <p class="info-line">Skype: kitreall</p>
+                    <p class="info-line">Telegram: @kichug</p>
+                    <p class="info-line">Twitter: <a href="https://twitter.com/Chugainovkirill" style="color: white;">@Chugainovkirill</a></p>
+                </div>
+            </div>
+        </div>
+        <img src="pictures/kirill_square.jpg" alt="Photo of speaker" class="photo place right z-top"> 
+        <style>
+            .sidebar {
+                width: 60%;
+                height: 100%;
+                background-color: black;
+            }
+    
+            .about {
+                margin-left: 10%;
+                width: 80%;
+            }
+    
+            .about h2 {
+                font-size: 36px;
+                opacity: .8;
+            }
+    
+            .about .info {
+                font-size: 24px;
+                padding-bottom: 1em;
+                border-bottom: 1px solid white;
+            }
+
+            .about .info-line {
+                opacity: .7;
+            }
+    
+            .about h2,
+            .about .info,
+            .about .contacts {
+                color: white;
+                line-height: .6em;
+            }
+    
+            .about .contacts {
+                font-size: 24px;
+                margin-top: 20px;
+                line-height: .9em;
+            }
+    
+            .info-line.bold {
+                font-weight: bold;
+            }
+    
+            .photo {
+                width: 40%;
+                height: auto;
+            }
+        </style>
+    </section>
+
+    <section class="slide clear">
+        <h2 class="shout shout-less shrink">You <u>need</u> a dark theme <br> for the app!</h2>
+    </section>
+
+    <section class="slide clear">
+        <figure>
+            <img class="cover" src="pictures/iPhone-white.jpg" alt="iPhone pr on the white background">
+        </figure>
+    </section>
+    
+    <section class="slide clear">
+        <figure>
+            <img class="cover" src="pictures/iPhone-black.jpg" alt="iPhone pr on the black background">
+        </figure>
+    </section>
+
+    
+
+    <div class="progress"></div>
+
+    <script src="node_modules/@shower/core/dist/shower.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+</html>
