@@ -8,6 +8,7 @@
     <style>
         .shower {
             --slide-ratio: calc(16 / 9);
+            --color-gray: #aaa;
         }
 
         .slide {
@@ -24,7 +25,8 @@
             opacity: .8 !important;
         }
 
-        .slide p {
+        .slide p,
+        .slide figcaption {
             color: white;
             opacity: .7;
         }
@@ -32,6 +34,10 @@
         .slide h2 {
             color: white;
             opacity: .8;
+        }
+
+        .slide .concept {
+            opacity: unset;
         }
 
         .slide::after {
@@ -44,7 +50,11 @@
             background-color: transparent;
             color: black;
             opacity: 1;
-        } 
+        }
+
+        .progress::before {
+            background-color: var(--color-gray);
+        };
     </style>
 </head>
 <body class="shower list">
@@ -159,36 +169,118 @@
     </section>
 
     <section class="slide clear">
-        <h2 class="shout shout-less shrink">Reason 2:<br> Oled or Amoled screen</h2>
+        <h2 class="shout shout-less shrink">Reason 2:<br> OLED screen</h2>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover" src="pictures/oled-vs-lcd-displays.jpg" alt="LCD versus OLED screens">
+        </figure>
     </section>
 
     <section class="slide">
         <h2>OLED</h2>
-        <p><span>Organic Light Emitting Diodes </span> — is a flat light emitting technology, <br>
-            made by placing a series of organic thin films between two conductors.<br>
-            When electrical current is applied, a bright light is emitted.</p>
+            <p>
+                Organic Light Emitting Diodes — is a flat light emitting technology, <br>
+                made by placing a series of organic thin films between two conductors.<br>
+                When electrical current is applied, a bright light is emitted.
+            </p>
+            <p class="next">
+                Black on OLED screens is known to use less power because the LEDs <br>
+                that make up each pixel are off, whereas displaying white means the LEDs <br>
+                need to shine and consume power.
+            </p>
     </section>
 
     <section class="slide">
-        <h2 class="shout shout-less shrink">Перечисление особенностей работы: энергосбережение, длительность работы</h2>
+        <h2>What does it mean?</h2>
+        <ul>
+            <li class="next"><p> Reduced energy consumption </p></li>
+            <li class="next"><p> Increased diodes life </p></li>
+        </ul>
+    </section>
+
+    <section class="slide clear">
+        <h2 class="shout shout-less shrink">Reason 3:<br> Silence for your eyes</h2>
     </section>
     
     <section class="slide">
-        <h2 class="shout shout-less shrink">Глаз</h2>
+        <figure>
+            <img class="cover" src="pictures/eye.jpg" alt="Eye anatomy">
+        </figure>
     </section>
 
     <section class="slide">
-        <h2 class="shout shout-less shrink">Мелатонин</h2>
+        <h2>How we see colors</h2>
+        <ul>
+            <li class="next">
+                <p> Light waves enter the eye and hit the retina </p>
+            </li>
+            <li class="next">
+                <p> Retina contains special cells: Rods and Cones </p>
+            </li>
+            <li class="next">
+                <p> Under the light they produce bioelectricity </p>
+            </li>
+            <li class="next">
+                <p> That signal goes to the brain through optic nerve </p>
+            </li>
+        </ul>
     </section>
 
     <section class="slide">
-        <h2 class="shout shout-less shrink">Тьма может посмотреть в тебя</h2>
+        <h2 class="shout shout-less shrink">We burn our eyes out 🔥🔥🔥</h2>
+    </section>
+
+    <section class="slide">
+        <h2>Rods and Cones work differently</h2>
+        <p> Rods help you see in low light. Cones help to distinguish colors and are more active in bright light. </p>
+        <p class="next"> High contrast is hard on the eyes, so in a dark room it is better to use a dark theme or night mode. </p>
+    </section>
+
+    <section class="slide">
+        <h2>Melatonin</h2>
+        <p> Melatonin is a hormone that your brain produces in response to darkness.<br> 
+            It helps with the timing of your circadian rhythms (24-hour internal clock) and with sleep. </p>
+        <p class="next"> Bright light interferes with melatonin production </p>
+    </section>
+
+    <section class="slide">
+        <h2>Takeaways</h2>
+        <ul>
+            <li>
+                <p> Useful for marketing </p>
+            </li>
+            <li>
+                <p> Reduces energy consumption </p>
+            </li>
+            <li>
+                <p> Increases display life </p>
+            </li>
+            <li>
+                <p> Reduces eye strain </p> 
+            </li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <blockquote>
+            <p>If you stare into the abyss, the abyss stares back at you.</p>
+        </blockquote>
+        <figcaption>Nietzsche</figcaption>
+    
+        <figure class=" place center bottom next">
+            <img src="pictures/cat-eyes.jpg" alt="Eyes of a cat" width="100%">
+        </figure>
+    </section>
+
+    <section class="slide clear">
+        <h2 class="shout shout-less shrink">Thank you!</h2>
     </section>
 
     <div class="progress"></div>
 
     <script src="node_modules/@shower/core/dist/shower.js"></script>
-    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
 
 </body>
 </html>
