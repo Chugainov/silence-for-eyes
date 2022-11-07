@@ -52,9 +52,13 @@
             opacity: 1;
         }
 
+        .slide .picture-revert {
+            filter: invert(1);
+        }
+
         .progress::before {
             background-color: var(--color-gray);
-        };
+        }
     </style>
 </head>
 <body class="shower list">
@@ -214,10 +218,10 @@
         <h2>How we see colors</h2>
         <ul>
             <li class="next">
-                <p> Light waves enter the eye and hit the retina </p>
+                <p> Light waves enter the eye and hit the retina (сетчатка) </p>
             </li>
             <li class="next">
-                <p> Retina contains special cells: Rods and Cones </p>
+                <p> Retina contains special cells: Rods and Cones (палочки и колбочки) </p>
             </li>
             <li class="next">
                 <p> Under the light they produce bioelectricity </p>
@@ -229,7 +233,7 @@
     </section>
 
     <section class="slide">
-        <h2 class="shout shout-less shrink">We burn our eyes out 🔥🔥🔥</h2>
+        <h2 class="shout shout-less">We burn our eyes out 🔥🔥🔥</h2>
     </section>
 
     <section class="slide">
@@ -276,6 +280,12 @@
 
     <section class="slide clear">
         <h2 class="shout shout-less shrink">Thank you!</h2>
+    </section>
+
+    <section class="slide">
+        <figure>
+            <img class="cover picture-revert" src="pictures/energy.jpg" alt="Formula of energy">
+        </figure>
     </section>
 
     <div class="progress"></div>
